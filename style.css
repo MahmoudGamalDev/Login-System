@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24353f;
+}
+
+.container {
+  background-color: #24353f;
+  width: 60%;
+}
+
+.container,
+nav,
+.welcome-box {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.welcome-box {
+    color: #17a2b8;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #17a2b8;
+}
+
+input {
+  background-color: #24353f !important;
+}
+
+input::placeholder {
+  color: rgb(184, 184, 184) !important;
+}
+
+input:focus {
+  border-color: #17a2b8 !important;
+}
+
+.login-btn,
+.signup-btn {
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  color: white;
+  background-color: #17a2b8;
+}
+
+.navbar {
+  padding: 0;
+  background-color: #24353f;
+}
