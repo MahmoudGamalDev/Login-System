@@ -11,6 +11,7 @@ body {
 .container {
   background-color: #24353f;
   width: 60%;
+  color: rgb(214, 37, 37);
 }
 
 .container,
