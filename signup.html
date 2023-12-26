@@ -57,7 +57,7 @@
             return false;
         }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^(?=.{1,256})(?=.{1,64}@.{1,255}$)[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/;
         if (!emailRegex.test(email)) {
             return false;
         }
@@ -105,6 +105,7 @@
     let errorMsg = () => {
         signupMsg.classList.remove('d-none');
         signupMsg.style.color = 'rgb(214, 37, 37)';
+        signupMsg.textContent = "Check inputs and try again(email should be valid and password min 8";
     }
 
     let existingUserMsg = () => {
@@ -118,5 +119,8 @@
         signupMsg.style.color = 'green';
         signupMsg.textContent = "Success, click on sign in!";
     }
+
+   
+
 
 </script>
